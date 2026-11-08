@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uploader</title>
+<style>
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+  h2 {
+    color: #58a6ff;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .box {
+    border: 2px dashed #30363d;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    background: #161b22;
+    cursor: pointer;
+  }
+  .box:hover { border-color: #58a6ff; }
+  input[type=file] { display: none; }
+  button {
+    margin-top: 20px;
+    background: #58a6ff;
+    color: #0d1117;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  #result {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 420px;
+  }
+  .item {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .item a {
+    color: #58a6ff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .item a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h2>File Uploader</h2>
+
+<div class="box" id="drop">
+  Drop file here or click
+  <input type="file" id="file" multiple>
+</div>
+
+<button id="btn" disabled>Upload</button>
+
+<div id="result"></div>
+
+<script>
+const drop = document.getElementById('drop');
+const fileInput = document.getElementById('file');
+const btn = document.getElementById('btn');
+const result = document.getElementById('result');
+
+let files = [];
+
+drop.onclick = () => fileInput.click();
+drop.ondragover = e => { e.preventDefault(); drop.style.borderColor = '#58a6ff'; };
+drop.ondragleave = () => drop.style.borderColor = '#30363d';
+drop.ondrop = e => {
+  e.preventDefault();
+  drop.style.borderColor = '#30363d';
+  files = [...e.dataTransfer.files];
+  btn.disabled = !files.length;
+};
+fileInput.onchange = () => {
+  files = [...fileInput.files];
+  btn.disabled = !files.length;
+};
+
+btn.onclick = () => {
+  result.innerHTML = '';
+  files.forEach(f => {
+    const url = URL.createObjectURL(f);
+    const div = document.createElement('div');
+    div.className = 'item';
+    div.innerHTML = `${f.name} (${(f.size/1024).toFixed(1)} KB)<br>
+      <a href="${url}" download="${f.name}" target="_blank">Click here</a>`;
+    result.appendChild(div);
+  });
+};
+</script>
+
+</body>
+</html>
