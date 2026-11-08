@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="THE ANONYMOUS 71">
+  <meta name="description" content="Anonymous 71">
+  <meta name="keywords" content="hacked,deface,website,whitehat,defacer,hack">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Drv7.ID">
+  <title>THE ANONYMOUS 71</title>
+  <meta property="og:image" content="https://i.ibb.co.com/LSzHp8Q/photo-6091582370122677820-c-modified.png">
+  <meta name="theme-color" content="#1a0000">
+  <link rel="icon" type="image/png" href="https://i.ibb.co.com/LSzHp8Q/photo-6091582370122677820-c-modified.png">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      background: #1a0000;
+      cursor: none;
+    }
+
+    body {
+      background-video: url('https://cdn.pixabay.com/video/2025/04/02/269302.mp4');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      font-family: 'Acme', sans-serif;
+    }
+
+    /* dark overlay so text stays readable on the red watercolor */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(20, 0, 0, 0.55) 0%,
+        rgba(40, 0, 0, 0.45) 40%,
+        rgba(10, 0, 0, 0.70) 100%
+      );
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px 20px;
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .kaleema {
+      height: 90px;
+      width: auto;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 0 8px rgba(255, 0, 40, 0.6));
+    }
+
+    .logo {
+      height: 160px;
+      width: auto;
+      border-radius: 50%;
+      margin-bottom: 18px;
+      border: 3px solid rgba(255, 0, 40, 0.7);
+      box-shadow: 0 0 25px rgba(255, 0, 40, 0.5), 0 0 60px rgba(255, 0, 0, 0.25);
+      animation: rotateLogo 12s linear infinite;
+    }
+
+    @keyframes rotateLogo {
+      from { transform: rotateY(0deg); }
+      to   { transform: rotateY(360deg); }
+    }
+
+    .title-main {
+      font-family: 'Reggae One', cursive;
+      color: #ff0028;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      text-shadow: 0 0 12px #000, 0 0 4px #ff0028;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-family: 'Reggae One', cursive;
+      color: #ff0028;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      text-shadow: 0 0 8px #000;
+      margin-bottom: 8px;
+    }
+
+    .banner {
+      font-family: 'Reggae One', cursive;
+      color: #ff0028;
+      font-size: 1.05rem;
+      margin: 10px 0;
+      text-shadow: 0 0 6px #000;
+    }
+
+    .message {
+      font-family: 'Reggae One', cursive;
+      color: #f5f5f5;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      max-width: 780px;
+      margin: 14px auto;
+      text-shadow: 0 0 6px #000, 1px 1px 2px #000;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 0, 40, 0.25);
+    }
+
+    .captain {
+      font-family: 'Reggae One', cursive;
+      margin: 12px 0 6px;
+      font-size: 1.15rem;
+    }
+
+    .captain .devil {
+      color: #ff0028;
+    }
+
+    .captain .name {
+      color: #00ff66;
+    }
+
+    .telegram-link {
+      display: inline-block;
+      background: #ff0028;
+      color: #000;
+      font-family: 'Reggae One', cursive;
+      font-size: 1.05rem;
+      padding: 8px 22px;
+      margin: 10px 0;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 0, 40, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .telegram-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 0, 40, 0.8);
+    }
+
+    .tags {
+      font-family: 'Reggae One', cursive;
+      color: #ff0028;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 12px 0;
+      text-shadow: 0 0 6px #000;
+    }
+
+    .marquee-bar {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      border-top: 1px solid rgba(255, 0, 40, 0.4);
+      border-bottom: 1px solid rgba(255, 0, 40, 0.4);
+      padding: 8px 0;
+      margin-top: 10px;
+    }
+
+    marquee {
+      font-family: 'Reggae One', cursive;
+      color: #de0707;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    #hekerabies {
+      font-family: 'Reggae One', cursive;
+      color: #ff0028;
+      font-size: 1.1rem;
+      min-height: 1.4em;
+      text-shadow: 0 0 8px #000;
+      margin-bottom: 8px;
+    }
+
+    /* subtle glitch on main title only */
+    .glitch {
+      position: relative;
+      animation: glitch 2.5s linear infinite;
+    }
+
+    @keyframes glitch {
+      0%, 90%, 100% { transform: translate(0); }
+      92% { transform: translate(-2px, 1px); }
+      94% { transform: translate(2px, -1px); }
+      96% { transform: translate(-1px, 2px); }
+      98% { transform: translate(1px, -2px); }
+    }
+
+    @media (max-width: 600px) {
+      .logo { height: 120px; }
+      .kaleema { height: 70px; }
+      .message { font-size: 0.85rem; padding: 12px; }
+    }
+
+    /* warning toast */
+    #protect-warn {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #111;
+      color: #ff0028;
+      border: 2px solid #ff0028;
+      padding: 18px 32px;
+      font-family: 'Reggae One', cursive;
+      font-size: 1.25rem;
+      z-index: 99999;
+      display: none;
+      box-shadow: 0 0 30px rgba(255, 0, 40, 0.6);
+      text-align: center;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" onclick="document.getElementById('lagu').play();fs()" onload="typeWriter()">
+
+  <audio src="https://a.top4top.io/m_39619kkcx1.mp3" autoplay id="lagu" loop></audio>
+<video id="background-video" src="https://cdn.pixabay.com/video/2025/04/02/269302.mp4" autoplay="" loop="" muted="" style="position: fixed;object-fit: cover;" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="><source src="https://flaneroo.com/io.mp4" type="video/webm">
+    </video>
+
+  <div id="protect-warn">⚠ Content is protected !!</div>
+
+  <div class="container">
+    <img class="kaleema" src="https://e.top4top.io/p_31711xnxh1.png" alt="">
+    
+    <img class="logo" src="https://i.ibb.co.com/LSzHp8Q/photo-6091582370122677820-c-modified.png" alt="Anonymous 71">
+
+    <div id="hekerabies"></div>
+
+    <h1 class="title-main glitch">⚠ Hacked by The Anonymous 71 ⚠</h1>
+    
+    <p class="subtitle">[+] No System is Safe From Bangladeshi Muslim Gray Hacktivist !</p>
+    
+    <p class="banner">WE ARE BANGLADESHI MUSLIM GRAY HACKTIVIST !!</p>
+
+    <div class="message">
+      ভারতের কিছু কিশোর হ্যাকার কোনো কারণ ছাড়াই বাংলাদেশের সরকারি ওয়েবসাইটসহ বিভিন্ন সাইটে সাইবার আক্রমণ চালাচ্ছে; এর প্রতিবাদে আমরাও পাল্টা আক্রমণ শুরু করেছি। এটি আমাদের পক্ষ থেকে একটি সতর্কবার্তা।<br><br>
+যদি ভারতীয় হ্যাকাররা এই উগ্র আচরণ বন্ধ না করে এবং সতর্কবার্তা দেওয়ার পরও পুনরায় সাইবার আক্রমণ চালায়, তবে আমরা আরও বড় ধরনের সাইবার আক্রমণ চালাব—ইনশাআল্লাহ।<br><br>
+      Some Indian child hackers are carrying out cyber attacks on various sites including the government site of Bangladesh without any reason, so we have also launched a counter attack in protest of this. This is a warning from our side.<br><br>
+      If Indian hackers do not stop this militant behavior and carry out cyber attacks again after giving a warning, then we will also carry out a bigger cyber attack, Insha Allah
+    </div>
+
+    <p class="captain">
+      <span class="devil">😈</span>
+      <span class="name">Captain Tomas</span>
+      <span class="devil">😈</span>
+    </p>
+
+    <p><i class="fa fa-telegram" style="font-size:28px;color:#00BFFF"></i></p>
+    
+    <a class="telegram-link" href="">Our telegram</a>
+
+    <div class="tags">
+      /OPIndia<br>
+      /Fuck Indian Government<br>
+      /Fuck Indian System<br>
+      /Stop Border Killing
+    </div>
+
+    <p class="banner">[+] /BANGLADESHI HACKER RULES [+]</p>
+  </div>
+
+  <div class="marquee-bar">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      #We Are The Anonymous 71 # We Are Protect BD # OPIndia # Stop Border Killing # Fuck Indian System # Fuck Indian Government
+    </marquee>
+  </div>
+
+  <script>
+    // ========== CONTENT PROTECTION ==========
+    (function () {
+      function showWarn() {
+        var w = document.getElementById('protect-warn');
+        if (!w) return;
+        w.style.display = 'block';
+        setTimeout(function () { w.style.display = 'none'; }, 1800);
+      }
+
+      // Right-click
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        showWarn();
+        return false;
+      });
+
+      // Keyboard shortcuts
+      document.addEventListener('keydown', function (e) {
+        // F12
+        if (e.key === 'F12' || e.keyCode === 123) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+        // Ctrl+U / Cmd+U (view source)
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U' || e.keyCode === 85)) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+        // Ctrl+Shift+I / J / C (DevTools)
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+        // Ctrl+S (save)
+        if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.keyCode === 83)) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+        // Ctrl+P (print)
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P' || e.keyCode === 80)) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+        // Ctrl+Shift+K (Firefox console)
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'K' || e.key === 'k')) {
+          e.preventDefault();
+          showWarn();
+          return false;
+        }
+      }, true);
+
+      // Block text selection / drag
+      document.addEventListener('selectstart', function (e) { e.preventDefault(); return false; });
+      document.addEventListener('dragstart', function (e) { e.preventDefault(); return false; });
+
+      // Detect view-source: in address bar (limited, best-effort)
+      if (location.protocol === 'view-source:') {
+        document.documentElement.innerHTML = '<h1 style="color:red;text-align:center;margin-top:40vh;font-family:sans-serif">⚠ Content is protected !!</h1>';
+      }
+
+      // DevTools open detection (size diff + console trap)
+      var devtoolsOpen = false;
+      var threshold = 160;
+      setInterval(function () {
+        var widthDiff = window.outerWidth - window.innerWidth > threshold;
+        var heightDiff = window.outerHeight - window.innerHeight > threshold;
+        if (widthDiff || heightDiff) {
+          if (!devtoolsOpen) {
+            devtoolsOpen = true;
+            showWarn();
+          }
+        } else {
+          devtoolsOpen = false;
+        }
+      }, 800);
+
+      // console clear + trap
+      setInterval(function () {
+        console.clear();
+        console.log('%c⚠ Content is protected !!', 'color:#ff0028;font-size:20px;font-weight:bold');
+      }, 2000);
+
+    })();
+    // ========== END PROTECTION ==========
+
+    window.onbeforeunload = function() {
+      return "are you sure ? wkwk";
+    };
+
+    function fs() {
+      var elem = document.documentElement;
+      if (elem.requestFullscreen) elem.requestFullscreen();
+      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+      else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
+      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+      
+      document.body.style.cursor = 'none';
+      document.onkeydown = function(e) { return false; };
+      document.addEventListener("keydown", e => {
+        if (e.key == "F11") e.preventDefault();
+      });
+    }
+
+    // typewriter
+    document.addEventListener('DOMContentLoaded', function() {
+      var dataText = ["Wh00pz ! your security get down !"];
+      function typeWriter(text, i, fnCallback) {
+        if (i < text.length) {
+          document.getElementById("hekerabies").innerHTML = text.substring(0, i + 1);
+          setTimeout(function() {
+            typeWriter(text, i + 1, fnCallback);
+          }, 150);
+        } else if (typeof fnCallback == 'function') {
+          setTimeout(fnCallback, 7000);
+        }
+      }
+      function StartTextAnimation(i) {
+        if (typeof dataText[i] == 'undefined') {
+          setTimeout(function() { StartTextAnimation(0); }, 30000);
+          return;
+        }
+        typeWriter(dataText[i], 0, function() {
+          StartTextAnimation(i + 1);
+        });
+      }
+      StartTextAnimation(0);
+    });
+  </script>
+
+  <script src="https://captain014.github.io/parot/doodle.js"></script>
+  <script>
+    doodle.init("https://captain014.github.io/parot/riksi.png");
+  </script>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur862.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2018/06/08/hell-yeah-pointer-2.html" target="_blank" title="Hell Yeah Pointer 2"></a>
+
+</body>
+</html>
